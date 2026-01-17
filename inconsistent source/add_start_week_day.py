@@ -34,8 +34,11 @@ for year, months in sorted(year_map.items()):
         ])
 
 json_str = json.dumps(result, separators=(',', ':'))
-# put each top-level key on its own line
 json_str = json_str.replace(',"', ',\n"')
-
 with open("map_weekdays.json", "w", encoding="utf-8") as f:
     f.write("{\n" + json_str[1:-1] + "\n}")
+
+# json.dumps(..., separators=(',', ':')) → produce fully compact JSON
+# .replace(',"', ',\n"')               → add newlines between top-level keys only
+# [1:-1]                               → strip outer { } so we can re-wrap neatly
+# Result: one year per line, compact inner arrays, valid JSON
