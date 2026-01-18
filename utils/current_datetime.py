@@ -1,4 +1,4 @@
-from ad_to_bs import ad_to_bs
+from utils.ad_to_bs import ad_to_bs
 from datetime import datetime
 import pytz
 
@@ -9,7 +9,7 @@ class DateTimeInfo:
         self.time = time
         self.weekday = weekday
 
-def current_datetime():
+def datetime_now():
     nepal_tz = pytz.timezone('Asia/Kathmandu')
     ad_datetime_now = datetime.now(nepal_tz)
     ad_date = ad_datetime_now.strftime("%Y-%m-%d")
@@ -21,11 +21,11 @@ def current_datetime():
         ad_date,
         bs_date,
         time,
-        bs_date
+        weekday
     )
 
 if __name__ == '__main__':
-    dt=current_datetime()
+    dt=current_datetime_now()
     print(dt.ad_date)
     print(dt.bs_date)
     print(dt.time)
