@@ -1,4 +1,4 @@
-from converter import ad_to_bs
+from .converter import ad_to_bs
 from datetime import datetime
 import pytz
 

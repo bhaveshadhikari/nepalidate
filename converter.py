@@ -1,5 +1,5 @@
-from data import TOTAL_BS_MONTHLY_DAYS, MONTH_START_WEEKDAY
-from data import NEW_YEAR_BS_AD_MAP
+from .data import TOTAL_BS_MONTHLY_DAYS, MONTH_START_WEEKDAY
+from .data import NEW_YEAR_BS_AD_MAP
 from datetime import date, timedelta
 
 def bs_to_ad(bs_date:str):
