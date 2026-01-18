@@ -25,7 +25,7 @@ def datetime_now():
     )
 
 if __name__ == '__main__':
-    dt=current_datetime_now()
+    dt=datetime_now()
     print(dt.ad_date)
     print(dt.bs_date)
     print(dt.time)
