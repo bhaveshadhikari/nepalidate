@@ -40,6 +40,9 @@ python -m utils.current_datetime
 Library Usage
 ```python
 from nepalidate.utils.converter import ad_to_bs, bs_to_ad
+print(ad_to_bs("2024-11-13"))
+
+
 ad_to_bs('yyyy-mm-dd' : str) // returns 'yyyy-mm-dd' in bs 
 bs_to_ad('yyyy-mm-dd' : str) // returns 'yyyy-mm-dd' in ad 
 ```
