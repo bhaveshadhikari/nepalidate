@@ -39,7 +39,7 @@ python -m utils.current_datetime
 
 Library Usage
 ```python
-from utils.converter import ad_to_bs, bs_to_ad
+from nepalidate.utils.converter import ad_to_bs, bs_to_ad
 ad_to_bs('yyyy-mm-dd' : str) // returns 'yyyy-mm-dd' in bs 
 bs_to_ad('yyyy-mm-dd' : str) // returns 'yyyy-mm-dd' in ad 
 ```

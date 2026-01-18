@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Add the parent directory (project/) to sys.path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
 from data import TOTAL_BS_MONTHLY_DAYS, MONTH_START_WEEKDAY
 
 

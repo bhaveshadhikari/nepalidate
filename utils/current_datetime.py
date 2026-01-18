@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Add the parent directory (project/) to sys.path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
 from utils.ad_to_bs import ad_to_bs
 from datetime import datetime
 import pytz
