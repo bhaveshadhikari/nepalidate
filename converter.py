@@ -20,7 +20,7 @@ def bs_to_ad(bs_date:str):
     # print(days_offset_from_year_start)
 
     date_ad = date(int(ad_year), int(ad_month), int(ad_day)) + timedelta(days=days_offset_from_year_start)
-    return date_ad
+    return f"{date_ad.year}-{date_ad.month}-{date_ad.day}"
 
 
 def ad_to_bs(ad_date:str):
