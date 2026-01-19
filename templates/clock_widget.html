@@ -4,27 +4,23 @@
     <meta charset="utf-8">
     <title>Nepal Clock</title>
     <style>
-        body {
-            margin: 0;
-            background: transparent;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
         .time {
             font-size: 26px;
             font-weight: bold;
         }
         .date {
-            font-size: 13px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <div class="time" id="clock">{{ time }}</div>
-    <div class="date">
-        {{ weekday }}<br>
-        AD: {{ ad_date }}<br>
-        BS: {{ bs_date }}
+    <div>
+        <div class="time" id="clock">{{ time }}</div>
+        <div class="date">
+            {{ weekday }}<br>
+            AD: {{ ad_date }}<br>
+            BS: {{ bs_date }}
+        </div>
     </div>
 
     <script>
